@@ -15,127 +15,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
+    <!-- Meta deskripsi untuk SEO. Ini yang ditampilkan Google di hasil pencarian -->
+    <meta name="description"
+        content="Situs resmi Pemerintah Kabupaten Murung Raya. Temukan informasi layanan publik, berita daerah, dan profil pemerintahan.">
 
-    <style>
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    <meta name="robots" content="index, follow"> <!-- biarkan Google mengindeks -->
+    <link rel="canonical" href="https://murungrayakab.go.id"> <!-- ganti dengan domain -->
 
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-        }
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('image/logo/favicon.png') }}">
 
-        .carousel,
-        .carousel-inner,
-        .carousel-item,
-        .carousel-item img {
-            height: 100vh;
-            width: 100vw;
-            object-fit: cover;
-        }
-
-        .carousel {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -2;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* background: rgba(0, 0, 0, 0); */
-            z-index: -1;
-        }
-
-
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            border: 3px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-    </style>
-
-    <style>
-        @keyframes rotateOnce {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .animate-rotateOnce {
-            animation: rotateOnce 1s ease-in-out;
-        }
-    </style>
-
-    <style>
-        @keyframes flip {
-            0% {
-                transform: rotateY(0deg);
-            }
-
-            100% {
-                transform: rotateY(360deg);
-            }
-        }
-
-        .animate-flip {
-            animation: flip 1s ease-in-out;
-        }
-    </style>
-
-    <style>
-        @keyframes bounceUp {
-            0% {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-
-            60% {
-                transform: translateY(-10%);
-                opacity: 1;
-            }
-
-            80% {
-                transform: translateY(5%);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .animate-bounceUp {
-            animation: bounceUp 0.6s ease-out;
-        }
-
-        .g-4 {
-            --bs-gutter-x: -20rem;
-        }
-    </style>
-
-
-
-
-
-
-
+    <!-- css -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 </head>
 
@@ -334,7 +225,7 @@
 
                         <h3 class="text-lg font-semibold text-center text-gray-800 mb-4">DAFTAR WEBSITE SOPD</h3>
                         <div class="space-y-2">
-                            <a href="#"
+                            <a href="{{ route ('murungraya.index') }}"
                                 class="block w-full text-center bg-gray-400 text-white py-2 rounded hover:bg-gray-500 text-sm no-underline">Dinas
                                 Pendidikan</a>
                             <a href="#"
@@ -845,7 +736,6 @@
             once: true
         });
     </script>
-
 
     <script>
         function openModal1() {
