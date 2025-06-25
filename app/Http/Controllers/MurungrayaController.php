@@ -11,4 +11,3 @@ class MurungrayaController extends Controller
         return view('murungraya');
     }
 }
-

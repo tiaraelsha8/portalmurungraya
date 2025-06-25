@@ -6,7 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #f2f6fc;
+    background: #b8bbbe;
     color: #333;
     scroll-behavior: smooth;
 }
@@ -17,11 +17,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom right, #f5f8fc, #ffffff);
+    background: linear-gradient(to bottom right, #bbbfc1, #c4bebe);
 }
 
 .section:nth-child(even) {
-    background: linear-gradient(to bottom right, #eaf1f8, #ffffff);
+    background: linear-gradient(to bottom right,#bbbfc1, #c4bebe);
 }
 
 .content-wrapper {
