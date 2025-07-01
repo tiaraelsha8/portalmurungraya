@@ -115,13 +115,16 @@
 
                         <div class="space-y-2">
                             <a href="{{ route('murungraya.index') }}#peta" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 PETA WILAYAH</a>
                             <a href="{{ route('murungraya.index') }}#visi-misi" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 VISI DAN MISI</a>
                             <a href="{{ route('murungraya.index') }}#sejarah" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 SEJARAH</a>
                         </div>
 
@@ -148,13 +151,16 @@
 
                         <div class="space-y-2">
                             <a href="{{ route('murungraya.index') }}#peta" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 PETA WILAYAH</a>
                             <a href="{{ route('murungraya.index') }}#visi-misi" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 VISI DAN MISI</a>
                             <a href="{{ route('murungraya.index') }}#sejarah" target="_blank"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm">
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
                                 SEJARAH</a>
                         </div>
 
@@ -338,9 +344,9 @@
 
 
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2" data-aos="fade-up">
 
-                <div x-data="{ open: false, animate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
+                <div x-data="{ open: false, animate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative ">
                     <!-- Avatar Card -->
                     <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false"
                         @click="open = !open; animate = true" :class="animate ? 'animate-flip' : ''"
@@ -354,19 +360,24 @@
                         </div>
                     </div>
 
-                    <!-- Modal di atas Avatar -->
-                    <div x-show="open" x-transition:enter="" x-transition:enter-start="" x-transition:enter-end=""
+                    <!-- MODAL MOBILE -->
+                    <div x-show="open" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 translate-y-4"
+                        x-transition:enter-end="opacity-100 translate-y-0"
                         x-transition:leave="transition ease-in duration-200"
                         x-transition:leave-start="opacity-100 translate-y-0"
                         x-transition:leave-end="opacity-0 translate-y-4" @click.outside="open = false"
-                        x-bind:class="open ? 'animate-bounceUp' : ''"
-                        class="absolute modal-transparasi transform -translate-x-1/2 z-50 bg-white rounded-xl shadow-xl p-4 w-72">
-                        <!-- Panah Arah -->
+                        class="absolute inset-x-0 mx-auto bottom-[180px] sm:hidden 
+                        z-50 bg-white rounded-xl shadow-xl p-4 w-[90vw] max-w-sm text-center">
+
+                        <!-- Panah Mobile -->
                         <div
-                            class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
+                            class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
+                            w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
                         </div>
 
-                        <h5 class="text-lg font-semibold text-center text-gray-800 mb-4">TRANSPARASI</h5>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-4">MURUNG RAYA</h5>
+
                         <div class="space-y-2">
                             <a href="http://ppid.murungrayakab.go.id/" target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
@@ -382,9 +393,50 @@
                                 style="text-decoration: none;">
                                 IPKD</a>
                         </div>
+
                         <button @click="open = false"
-                            class="mt-4 w-full text-sm text-gray-500 hover:text-gray-700">Tutup</button>
+                            class="mt-4 w-full text-sm text-gray-500 hover:text-gray-700 transition duration-200">Tutup</button>
                     </div>
+
+                    <!-- MODAL DESKTOP -->
+                    <div x-show="open" x-transition:enter="" x-transition:enter-start="" x-transition:enter-end=""
+                        x-transition:leave="transition ease-in duration-200"
+                        x-transition:leave-start="opacity-100 translate-y-0"
+                        x-transition:leave-end="opacity-0 translate-y-4" @click.outside="open = false"
+                        x-bind:class="open ? 'animate-bounceUp' : ''"
+                        class="absolute left-[84px] -translate-x-1/2 top-[-255px] hidden sm:block 
+                        z-50 bg-white rounded-xl shadow-xl p-4 w-72 max-w-sm text-center">
+
+                        <!-- Panah Desktop -->
+                        <div
+                            class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
+                            w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
+                        </div>
+
+                        <h5 class="text-xl font-semibold text-gray-800 mb-4">MURUNG RAYA</h5>
+
+                        <div class="space-y-2">
+                            <a href="http://ppid.murungrayakab.go.id/" target="_blank"
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
+                                PPID</a>
+                            <a href="https://murakab.bps.go.id/publication.html?Publikasi%5BtahunJudul%5D=&Publikasi%5BkataKunci%5D=Murung+Raya+Dalam+Angka&Publikasi%5BcekJudul%5D=0&yt0=Tampilkan"
+                                target="_blank"
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
+                                MURUNG RAYA DALAM ANGKA</a>
+                            <a href="https://data.murungrayakab.go.id/?files" target="_blank"
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
+                                IPKD</a>
+                        </div>
+
+                        <button @click="open = false"
+                            class="mt-4 w-full text-sm text-gray-500 hover:text-gray-700 transition duration-200">Tutup</button>
+                    </div>
+
+
+
                 </div>
 
 
@@ -578,7 +630,7 @@
 
 
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2" data-aos="fade-up">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
 
                 <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
                     <!-- Avatar Card -->
@@ -600,7 +652,7 @@
             </div>
 
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2" data-aos="fade-up">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
 
                 <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
                     <!-- Avatar Card -->
@@ -654,7 +706,7 @@
 
                     <!-- Modal di atas Avatar -->
                     <div x-show="open" x-transition
-                        class="absolute modal-position transform -translate-x-1/2 -translate-y-1/2 w-0 h-0 z-0 pointer-events-none">
+                        class="absolute top-[55px] left-[155px] max-[420px]:top-[55px] max-[420px]:left-[42%] sm:top-[55px] sm:left-[55px] transform -translate-x-1/2 -translate-y-1/2 w-0 h-0 z-0 pointer-events-none">
                         <template x-for="(item, index) in items" :key="index">
                             <a :href="item.href" target="_blank" :title="item.title"
                                 class="absolute w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
