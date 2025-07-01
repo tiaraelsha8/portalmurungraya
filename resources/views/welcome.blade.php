@@ -56,13 +56,13 @@
                 </video>
 
                 <!-- Foto di atas video -->
-                <img src="lambang_mura.png" alt="Logo" class="overlay-image top-left" />
-                <img src="lambang_mura.png" alt="Logo" class="overlay-image top-right" />
-                <img src="lambang_mura.png" alt="Logo" class="overlay-image bottom-left" />
-                <img src="lambang_mura.png" alt="Logo" class="overlay-image bottom-right" />
+                <img src="asset/2.png" alt="Logo" class="overlay-image top-left" />
+                <img src="asset/2.png" alt="Logo" class="overlay-image top-right" />
+                <img src="asset/2.png" alt="Logo" class="overlay-image bottom-left" />
+                <img src="asset/2.png" alt="Logo" class="overlay-image bottom-right" />
 
-                <img src="lambang_mura.png" alt="Middle Left" class="overlay-image middle-left" />
-                <img src="lambang_mura.png" alt="Middle Right" class="overlay-image middle-right" />
+                {{-- <img src="lambang_mura.png" alt="Middle Left" class="overlay-image middle-left" />
+                <img src="lambang_mura.png" alt="Middle Right" class="overlay-image middle-right" /> --}}
             </div>
         </div>
     </div>
@@ -71,7 +71,8 @@
 
     <!-- Content with AOS Animated Cards -->
     <div>
-        <img src="lambang_mura.png" alt="lambang" width="178" height="134" class="center">
+        {{-- <img src="lambang_mura.png" alt="lambang" width="178" height="134" class="center"> --}}
+        <img src="asset/hut.png" alt="lambang" width="128" height="128" class="center">
     </div>
 
     <h1 style="text-align:center; color:rgb(255, 255, 255);">PEMERINTAH KABUPATEN MURUNG RAYA</h1>
@@ -376,7 +377,7 @@
                             w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
                         </div>
 
-                        <h5 class="text-lg font-semibold text-gray-800 mb-4">MURUNG RAYA</h5>
+                        <h5 class="text-lg font-semibold text-gray-800 mb-4">TRANSPARASI</h5>
 
                         <div class="space-y-2">
                             <a href="http://ppid.murungrayakab.go.id/" target="_blank"
@@ -413,7 +414,7 @@
                             w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
                         </div>
 
-                        <h5 class="text-xl font-semibold text-gray-800 mb-4">MURUNG RAYA</h5>
+                        <h5 class="text-xl font-semibold text-gray-800 mb-4">TRANSPARASI</h5>
 
                         <div class="space-y-2">
                             <a href="http://ppid.murungrayakab.go.id/" target="_blank"

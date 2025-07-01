@@ -74,21 +74,32 @@ z-index: -1;
   .top-left {
     top: 10px;
     left: 10px;
+    width: 350px;
+    height: 350px;
+    rotate: 90deg;
   }
 
   .top-right {
     top: 10px;
     right: 10px;
+    width: 350px;
+    height: 350px;
+    rotate: 180deg;
   }
 
   .bottom-left {
     bottom: 10px;
     left: 10px;
+    width: 350px;
+    height: 350px;
   }
 
   .bottom-right {
     bottom: 10px;
     right: 10px;
+    width: 350px;
+    height: 350px;
+    rotate: 270deg;
   }
 
     .middle-left {
@@ -184,7 +195,7 @@ animation: bounceUp 0.6s ease-out;
 }
 
 /* Responsif untuk layar mobile */
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .modal-position {
     
     top: 55px;
