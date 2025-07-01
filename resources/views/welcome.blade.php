@@ -690,7 +690,7 @@
                         { iconType: 'image', label: 'asset/youtube.png', title: 'Youtube', href: 'https://www.youtube.com/channel/UC1HMVrTzdaLdGcyV94sFbYA' },
                         { iconType: 'image', label: 'asset/facebook.png', title: 'Facebook', href: 'https://www.facebook.com/diskominfomurakab/?locale=id_ID' },
                         { iconType: 'image', label: 'asset/whatsapp.png', title: 'Whatsapp', href: '#' },
-                        { iconType: 'image', label: 'asset/twitter.png', title: 'X', href: '#' },
+                        { iconType: 'image', label: 'asset/tiktok.png', title: 'Tiktok', href: '#' },
                 
                     ]
                 }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
@@ -710,12 +710,12 @@
                         class="absolute top-[55px] left-[155px] max-[420px]:top-[55px] max-[420px]:left-[42%] sm:top-[55px] sm:left-[55px] transform -translate-x-1/2 -translate-y-1/2 w-0 h-0 z-0 pointer-events-none">
                         <template x-for="(item, index) in items" :key="index">
                             <a :href="item.href" target="_blank" :title="item.title"
-                                class="absolute w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
+                                class="absolute w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
                                 :style="`
-                                                                                                                                                                                                                                                                                                                                                                                  transform: rotate(${index * (360 / items.length)}deg)
-                                                                                                                                                                                                                                                                                                                                                                                            translate(100px)
-                                                                                                                                                                                                                                                                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
-                                                                                                                                                                                                                                                                                                                                                                                `">
+                                    transform: rotate(${index * (360 / items.length)}deg)
+                                            translate(100px)
+                                            rotate(-${index * (360 / items.length)}deg);
+                                `">
                                 <template x-if="item.iconType === 'image'">
                                     <img :src="item.label" alt="" class="w-6 h-6 rounded-full" />
                                 </template>
