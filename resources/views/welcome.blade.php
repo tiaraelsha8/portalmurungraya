@@ -38,9 +38,9 @@
 <body>
 
     <!-- Background Carousel -->
-    <div id="bgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="300000">
+    <div id="bgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
-            {{-- <div class="carousel-item active">
+            <div class="carousel-item active">
                 <img src="Tugu_Bundaran_Emas.jpg" alt="Background 1">
             </div>
             <div class="carousel-item">
@@ -48,12 +48,12 @@
             </div>
             <div class="carousel-item">
                 <img src="Kantor_Kecamatan_Murung,_Murung_Raya.jpg" alt="Background 3">
-            </div> --}}
+            </div>
             <div class="video-container">
-                <video autoplay loop muted playsinline>
+                {{-- <video autoplay loop muted playsinline>
                     <source src="Tana Malai Tolung Lingu (MURA).mp4" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
+                </video> --}}
 
                 <!-- Foto di atas video -->
                 <img src="asset/2.png" alt="Logo" class="overlay-image top-left" />
@@ -61,8 +61,7 @@
                 <img src="asset/2.png" alt="Logo" class="overlay-image bottom-left" />
                 <img src="asset/2.png" alt="Logo" class="overlay-image bottom-right" />
 
-                {{-- <img src="lambang_mura.png" alt="Middle Left" class="overlay-image middle-left" />
-                <img src="lambang_mura.png" alt="Middle Right" class="overlay-image middle-right" /> --}}
+
             </div>
         </div>
     </div>

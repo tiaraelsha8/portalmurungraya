@@ -23,7 +23,14 @@ margin: 0;
 height: 100vh;
 width: 100vw;
 object-fit: cover;
+overflow: hidden;
 
+
+}
+
+.carousel-fade .carousel-item-next.carousel-item-start, .carousel-fade .carousel-item-prev.carousel-item-end, .carousel-fade .carousel-item.active {
+    z-index: -3;
+    opacity: 1;
 }
 
 .carousel-item video {
@@ -37,7 +44,7 @@ object-fit: cover;
 position: fixed;
 top: 100;
 left: 0;
-z-index: -2;
+z-index: -3;
 }
 
 .overlay {
@@ -69,6 +76,7 @@ z-index: -1;
     position: absolute;
     width: 100px; /* atur ukuran ikon di sudut */
     height: 100px;
+    z-index: -2;
   }
 
   .top-left {
