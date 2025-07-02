@@ -67,7 +67,8 @@
         </div>
     </div>
 
-
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
     <!-- Content with AOS Animated Cards -->
     <div>
@@ -218,48 +219,7 @@
             </div>
 
 
-            <div id="popupCardModal1"
-                class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
-                <div
-                    class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
 
-                    <!-- Close Button -->
-                    <button onclick="closeModal1()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">LAYANAN PUBLIK</h4>
-
-                    <div class="flex flex-col gap-2">
-                        <a href="http://dpmptsp.web.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">LAYANAN PERIZINAN</a>
-                        <a href="https://disdukcapil.web.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">LAYANAN KEPENDUDUKAN</a>
-                        <a href="https://dinkes.murungrayakab.go.id/2024/07/puskesmas-puruk-cahu.html"
-                            class="btn btn-primary" target="_blank">LAYANAN PUSKESMAS</a>
-                        <a href="https://rsud.murungrayakab.go.id/" class="btn btn-primary" target="_blank">RSUD
-                            PURUK CAHU</a>
-                        <a href="https://play.google.com/store/apps/details?id=mam.reader.imurungraya&hl=en"
-                            class="btn btn-primary" target="_blank">IMURUNG RAYA</a>
-                        <a href="https://layanan.murungrayakab.go.id/lpse.murungrayakab.go.id" class="btn btn-primary"
-                            target="_blank">LPSE</a>
-                        <a href="https://layanan.murungrayakab.go.id/smarttax.murungrayakab.go.id"
-                            class="btn btn-primary" target="_blank">SMARTTAX</a>
-                        <a href="https://infopublik.id/mediacenter/2614" class="btn btn-primary" target="_blank">INFO
-                            PUBLIK</a>
-                        <a href="https://ppid.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PPID</a>
-                        <a href="http://jdih.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH</a>
-                        <a href="http://jdih-dprd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH
-                            DPRD</a>
-
-
-
-                    </div>
-                </div>
-            </div>
 
             <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
                 <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2" data-aos="fade-up">
@@ -278,46 +238,7 @@
             </div>
 
 
-            <div id="popupCardModal3"
-                class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
-                <div
-                    class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
 
-                    <!-- Close Button -->
-                    <button onclick="closeModal3()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">LAYANAN ADMINISTRASI PEMERINTAH
-                    </h4>
-
-                    <div class="flex flex-col gap-2">
-                        <a href="https://multidomain.mail.go.id/mail/" class="btn btn-primary" target="_blank">EMAIL
-                            PEMERINTAH DAERAH</a>
-                        <a href="https://srikandi.arsip.go.id/auth/login" class="btn btn-primary"
-                            target="_blank">SRIKANDI</a>
-                        <a href="http://helpdesk.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PUSAT
-                            BANTUAN</a>
-                        <a href="http://simpan.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">MANAJEMEN PENGETAHUAN</a>
-                        <a href="https://kinerja.bkn.go.id/login" class="btn btn-primary" target="_blank">eKINERJA
-                            BKN</a>
-                        <a href="http://e-kinerja.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">PRESENSI</a>
-                        <a href="https://sisapan.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">SISAPAN</a>
-                        <a href="https://helpdesk.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">HELPDESK</a>
-
-
-
-
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -559,75 +480,7 @@
             </div>
 
 
-            <div id="popupCardModal2"
-                class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
-                <div
-                    class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
 
-                    <!-- Close Button -->
-                    <button onclick="closeModal2()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-
-                    <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">PERANGKAT DAERAH</h4>
-
-                    <div class="flex flex-col gap-2">
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">SETDA</a>
-                        <a href="https://inspektorat.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">INSPEKTORAT</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">SETWAN</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISDIKBUD</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">SATPOL PP DAMKAR</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DINSOS</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISDALDUK KBP3A</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DLH</a>
-                        <a href="https://dpmd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">DPMD</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISPERINDANGKOP UKM</a>
-                        <a href="https://dpmptsp.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">DPMPTSP</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISPARPORA</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISARPUS</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISHUB</a>
-                        <a href="https://dinkes.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">DINKES</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISNAKERTRANS</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISPUPR</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DIS PKPP</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISHANPANG</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">DISTANIK</a>
-                        <a href="https://diskominfo.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">DISKOMINFO SP</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">BAPPELITBANGDA</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">BPKAD</a>
-                        <a href="https://bapenda.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">BAPENDA</a>
-                        <a href="https://bkpsdm.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">BKPSDM</a>
-                        <a href="https://bpbd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">BPBD</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">BAKESBANGPOL</a>
-                        <a href="https://disdukcapil.murungrayakab.go.id/" class="btn btn-primary"
-                            target="_blank">DISDUKCAPIL</a>
-                        <a href="https://rsud.murungrayakab.go.id/" class="btn btn-primary" target="_blank">RSUD
-                            PURUK CAHU</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. MURUNG</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Tanah Siang</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Laung Tuhup</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Permata Intan</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Sumber Barito</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Tanah Siang
-                            Selatan</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Barito Tuhup
-                            Raya</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Uut Murung</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Seribu Riam</a>
-                        <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Sungai Babuat</a>
-
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -712,10 +565,10 @@
                             <a :href="item.href" target="_blank" :title="item.title"
                                 class="absolute w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
                                 :style="`
-                                    transform: rotate(${index * (360 / items.length)}deg)
-                                            translate(100px)
-                                            rotate(-${index * (360 / items.length)}deg);
-                                `">
+                                                                                                                                    transform: rotate(${index * (360 / items.length)}deg)
+                                                                                                                                            translate(100px)
+                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
+                                                                                                                                `">
                                 <template x-if="item.iconType === 'image'">
                                     <img :src="item.label" alt="" class="w-6 h-6 rounded-full" />
                                 </template>
@@ -746,6 +599,156 @@
 
 
     </div>
+
+    <!-- Pop Up Modal -->
+    <div id="popupCardModal1"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div
+            class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
+
+            <!-- Close Button -->
+            <button onclick="closeModal1()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">LAYANAN PUBLIK</h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="http://dpmptsp.web.murungrayakab.go.id/" class="btn btn-primary" target="_blank">LAYANAN
+                    PERIZINAN</a>
+                <a href="https://disdukcapil.web.murungrayakab.go.id/" class="btn btn-primary"
+                    target="_blank">LAYANAN KEPENDUDUKAN</a>
+                <a href="https://dinkes.murungrayakab.go.id/2024/07/puskesmas-puruk-cahu.html" class="btn btn-primary"
+                    target="_blank">LAYANAN PUSKESMAS</a>
+                <a href="https://rsud.murungrayakab.go.id/" class="btn btn-primary" target="_blank">RSUD
+                    PURUK CAHU</a>
+                <a href="https://play.google.com/store/apps/details?id=mam.reader.imurungraya&hl=en"
+                    class="btn btn-primary" target="_blank">IMURUNG RAYA</a>
+                <a href="https://layanan.murungrayakab.go.id/lpse.murungrayakab.go.id" class="btn btn-primary"
+                    target="_blank">LPSE</a>
+                <a href="https://layanan.murungrayakab.go.id/smarttax.murungrayakab.go.id" class="btn btn-primary"
+                    target="_blank">SMARTTAX</a>
+                <a href="https://infopublik.id/mediacenter/2614" class="btn btn-primary" target="_blank">INFO
+                    PUBLIK</a>
+                <a href="https://ppid.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PPID</a>
+                <a href="http://jdih.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH</a>
+                <a href="http://jdih-dprd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH
+                    DPRD</a>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popupCardModal2"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div
+            class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
+
+            <!-- Close Button -->
+            <button onclick="closeModal2()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">PERANGKAT DAERAH</h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="https://example.com" class="btn btn-primary" target="_blank">SETDA</a>
+                <a href="https://inspektorat.murungrayakab.go.id/" class="btn btn-primary"
+                    target="_blank">INSPEKTORAT</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">SETWAN</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISDIKBUD</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">SATPOL PP DAMKAR</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DINSOS</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISDALDUK KBP3A</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DLH</a>
+                <a href="https://dpmd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">DPMD</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISPERINDANGKOP UKM</a>
+                <a href="https://dpmptsp.murungrayakab.go.id/" class="btn btn-primary" target="_blank">DPMPTSP</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISPARPORA</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISARPUS</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISHUB</a>
+                <a href="https://dinkes.murungrayakab.go.id/" class="btn btn-primary" target="_blank">DINKES</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISNAKERTRANS</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISPUPR</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DIS PKPP</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISHANPANG</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">DISTANIK</a>
+                <a href="https://diskominfo.murungrayakab.go.id/" class="btn btn-primary" target="_blank">DISKOMINFO
+                    SP</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">BAPPELITBANGDA</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">BPKAD</a>
+                <a href="https://bapenda.murungrayakab.go.id/" class="btn btn-primary" target="_blank">BAPENDA</a>
+                <a href="https://bkpsdm.murungrayakab.go.id/" class="btn btn-primary" target="_blank">BKPSDM</a>
+                <a href="https://bpbd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">BPBD</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">BAKESBANGPOL</a>
+                <a href="https://disdukcapil.murungrayakab.go.id/" class="btn btn-primary"
+                    target="_blank">DISDUKCAPIL</a>
+                <a href="https://rsud.murungrayakab.go.id/" class="btn btn-primary" target="_blank">RSUD
+                    PURUK CAHU</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. MURUNG</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Tanah Siang</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Laung Tuhup</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Permata Intan</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Sumber Barito</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Tanah Siang
+                    Selatan</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Barito Tuhup
+                    Raya</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Uut Murung</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Seribu Riam</a>
+                <a href="https://example.com" class="btn btn-primary" target="_blank">KEC. Sungai Babuat</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popupCardModal3"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div
+            class="bg-white rounded-xl shadow-xl w-[90%] max-w-xs p-6 animate-fade-in relative max-h-150 overflow-y-auto">
+
+            <!-- Close Button -->
+            <button onclick="closeModal3()" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <h4 class="text-lg font-semibold text-center mb-4 text-gray-800">LAYANAN ADMINISTRASI PEMERINTAH
+            </h4>
+
+            <div class="flex flex-col gap-2">
+                <a href="https://multidomain.mail.go.id/mail/" class="btn btn-primary" target="_blank">EMAIL
+                    PEMERINTAH DAERAH</a>
+                <a href="https://srikandi.arsip.go.id/auth/login" class="btn btn-primary"
+                    target="_blank">SRIKANDI</a>
+                <a href="http://helpdesk.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PUSAT
+                    BANTUAN</a>
+                <a href="http://simpan.murungrayakab.go.id/" class="btn btn-primary" target="_blank">MANAJEMEN
+                    PENGETAHUAN</a>
+                <a href="https://kinerja.bkn.go.id/login" class="btn btn-primary" target="_blank">eKINERJA
+                    BKN</a>
+                <a href="http://e-kinerja.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PRESENSI</a>
+                <a href="https://sisapan.murungrayakab.go.id/" class="btn btn-primary" target="_blank">SISAPAN</a>
+                <a href="https://helpdesk.murungrayakab.go.id/" class="btn btn-primary" target="_blank">HELPDESK</a>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     </div>
 
 
