@@ -443,9 +443,9 @@
                             class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white">
                         </div>
 
-                        <h3 class="text-lg font-semibold text-center text-gray-800 mb-4">DAFTAR WEBSITE SOPD</h3>
+                        <h3 class="text-lg font-semibold text-center text-gray-800 mb-4">MCP KPK</h3>
                         <div class="space-y-2">
-                            <a href="#"
+                            {{-- <a href="#"
                                 class="block w-full text-center bg-gray-400 text-white py-2 rounded hover:bg-gray-500 text-sm no-underline">Dinas
                                 Pendidikan</a>
                             <a href="#"
@@ -453,7 +453,7 @@
                                 Kesehatan</a>
                             <a href="#"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline">Dinas
-                                Kominfo</a>
+                                Kominfo</a> --}}
                         </div>
                         <button @click="open = false"
                             class="mt-4 w-full text-sm text-gray-500 hover:text-gray-700">Tutup</button>
