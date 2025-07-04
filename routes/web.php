@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\COntrollers\MurungrayaController;
+use App\Http\Controllers\MurungrayaController;
 
 // Route::get('/', function () {
 //     return view('welcome');
