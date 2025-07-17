@@ -238,11 +238,6 @@
 
 
 
-
-
-
-
-
             <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
 
                 <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
@@ -529,9 +524,29 @@
 
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4" style="justify-content: center">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative mx-auto">
+                <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
+                    <!-- Avatar Card -->
+                    <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
+                        :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
+                        class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
+                        <a href="https://radioswaramurungraya.com/" target="_blank"><img src="asset/smurafm.png"
+                                alt="Avatar"
+                                class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
+                        <div x-show="showTooltip" x-transition
+                            class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
+                            RADIO MURA
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative">
 
                 <div x-data="{
                     open: false,
@@ -564,16 +579,37 @@
                             <a :href="item.href" target="_blank" :title="item.title"
                                 class="absolute w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
                                 :style="`
-                                                                                                                                    transform: rotate(${index * (360 / items.length)}deg)
-                                                                                                                                            translate(100px)
-                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
-                                                                                                                                `">
+                                                                                                                                                                                                    transform: rotate(${index * (360 / items.length)}deg)
+                                                                                                                                                                                                            translate(100px)
+                                                                                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
+                                                                                                                                                                                                `">
                                 <template x-if="item.iconType === 'image'">
                                     <img :src="item.label" alt="" class="w-6 h-6 rounded-full" />
                                 </template>
                             </a>
                         </template>
                     </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
+
+                <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
+                    <!-- Avatar Card -->
+                    <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
+                        :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
+                        class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
+                        <a href="https://radioswaramurungraya.com/" target="_blank"><img src="asset/smurafm.png"
+                                alt="Avatar"
+                                class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
+                        <div x-show="showTooltip" x-transition
+                            class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
+                            RADIO MURA
+                        </div>
+                    </div>
+
                 </div>
 
 
