@@ -88,7 +88,7 @@
                         @click="open = !open; animate = true" :class="animate ? 'animate-flip' : ''"
                         @animationend="animate = false"
                         class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
-                        <img src="lambang_mura.png" alt="Avatar"
+                        <img src="asset/mura.jpeg" alt="Avatar"
                             class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" />
                         <div x-show="showTooltip" x-transition
                             class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
@@ -295,16 +295,16 @@
                         <h5 class="text-lg font-semibold text-gray-800 mb-4">TRANSPARASI</h5>
 
                         <div class="space-y-2">
-                            <a href="http://ppid.murungrayakab.go.id/" target="_blank"
+                            <a href="https://data.murungrayakab.go.id/?files/PUBLIKASI" target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
-                                PPID</a>
+                                PUBLIKASI</a>
                             <a href="https://murakab.bps.go.id/publication.html?Publikasi%5BtahunJudul%5D=&Publikasi%5BkataKunci%5D=Murung+Raya+Dalam+Angka&Publikasi%5BcekJudul%5D=0&yt0=Tampilkan"
                                 target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
                                 MURUNG RAYA DALAM ANGKA</a>
-                            <a href="https://data.murungrayakab.go.id/?files" target="_blank"
+                            <a href="https://data.murungrayakab.go.id/?files/TRANSPARANSI" target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
                                 IPKD</a>
@@ -332,16 +332,16 @@
                         <h5 class="text-xl font-semibold text-gray-800 mb-4">TRANSPARASI</h5>
 
                         <div class="space-y-2">
-                            <a href="http://ppid.murungrayakab.go.id/" target="_blank"
+                            <a href="https://data.murungrayakab.go.id/?files/PUBLIKASI" target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
-                                PPID</a>
+                                PUBLIKASI</a>
                             <a href="https://murakab.bps.go.id/publication.html?Publikasi%5BtahunJudul%5D=&Publikasi%5BkataKunci%5D=Murung+Raya+Dalam+Angka&Publikasi%5BcekJudul%5D=0&yt0=Tampilkan"
                                 target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
                                 MURUNG RAYA DALAM ANGKA</a>
-                            <a href="https://data.murungrayakab.go.id/?files" target="_blank"
+                            <a href="https://data.murungrayakab.go.id/?files/TRANSPARANSI" target="_blank"
                                 class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
                                 style="text-decoration: none;">
                                 IPKD</a>
@@ -439,15 +439,15 @@
 
                         <h3 class="text-lg font-semibold text-center text-gray-800 mb-4">MCP KPK</h3>
                         <div class="space-y-2">
-                            {{-- <a href="#"
-                                class="block w-full text-center bg-gray-400 text-white py-2 rounded hover:bg-gray-500 text-sm no-underline">Dinas
-                                Pendidikan</a>
-                            <a href="#"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline">Dinas
-                                Kesehatan</a>
-                            <a href="#"
-                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline">Dinas
-                                Kominfo</a> --}}
+                            <a href="https://jaga.id/jendela-pencegahan/summary?vnk=99fa4fc3" target="_blank"
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
+                                DASHBOARD PENCEGAHAN</a>
+                            <a href="https://jaga.id/jendela-pencegahan/summary?vnk=99fa4fc3" target="_blank"
+                                class="block w-full text-center bg-blue-600 text-white py-2 rounded hover:bg-blue-700 text-sm no-underline"
+                                style="text-decoration: none;">
+                                PUBLIKASI</a>
+                                
                         </div>
                         <button @click="open = false"
                             class="mt-4 w-full text-sm text-gray-500 hover:text-gray-700">Tutup</button>
@@ -485,12 +485,12 @@
                     <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
                         :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
                         class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
-                        <a href="https://rekreasi.murungrayakab.go.id/" target="_blank"><img
-                                src="asset/parawisata.png" alt="Avatar"
+                        <a href="https://saritamura.murungrayakab.go.id/" target="_blank"><img
+                                src="asset/sdi.jpeg" alt="Avatar"
                                 class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
                         <div x-show="showTooltip" x-transition
                             class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
-                            PARIWISATA
+                            SATU DATA INDONESIA
                         </div>
                     </div>
 
@@ -507,12 +507,12 @@
                     <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
                         :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
                         class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
-                        <a href="https://radioswaramurungraya.com/" target="_blank"><img src="asset/smurafm.png"
+                        <a href="https://ppid.murungrayakab.go.id/" target="_blank"><img src="asset/ppid.jpeg"
                                 alt="Avatar"
                                 class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
                         <div x-show="showTooltip" x-transition
                             class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
-                            RADIO MURA
+                            PPID
                         </div>
                     </div>
 
@@ -525,26 +525,6 @@
         </div>
 
         <div class="row g-4" style="justify-content: center">
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
-
-                <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
-                    <!-- Avatar Card -->
-                    <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
-                        :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
-                        class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
-                        <a href="https://radioswaramurungraya.com/" target="_blank"><img src="asset/smurafm.png"
-                                alt="Avatar"
-                                class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
-                        <div x-show="showTooltip" x-transition
-                            class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
-                            RADIO MURA
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
 
             <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative">
 
@@ -579,10 +559,10 @@
                             <a :href="item.href" target="_blank" :title="item.title"
                                 class="absolute w-14 h-14 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md hover:bg-blue-700 transition-transform duration-300 text-lg pointer-events-auto"
                                 :style="`
-                                                                                                                                                                                                    transform: rotate(${index * (360 / items.length)}deg)
-                                                                                                                                                                                                            translate(100px)
-                                                                                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
-                                                                                                                                                                                                `">
+                                                                                                                                                                                                                                    transform: rotate(${index * (360 / items.length)}deg)
+                                                                                                                                                                                                                                            translate(100px)
+                                                                                                                                                                                                                                            rotate(-${index * (360 / items.length)}deg);
+                                                                                                                                                                                                                                `">
                                 <template x-if="item.iconType === 'image'">
                                     <img :src="item.label" alt="" class="w-6 h-6 rounded-full" />
                                 </template>
@@ -594,26 +574,6 @@
 
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-2 position-relative" data-aos="fade-up">
-
-                <div x-data="{ rotate: false, showTooltip: false }" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/6 p-2 relative">
-                    <!-- Avatar Card -->
-                    <div @mouseenter="showTooltip = true" @mouseleave="showTooltip = false" @click="rotate = true;"
-                        :class="{ 'animate-flip': rotate }" @animationend="rotate = false"
-                        class="bg-black rounded-full bg-opacity-50 shadow-lg w-[150px] h-[150px] flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer">
-                        <a href="https://radioswaramurungraya.com/" target="_blank"><img src="asset/smurafm.png"
-                                alt="Avatar"
-                                class="rounded-full bg-white w-[120px] h-[120px] object-cover border-4 border-black" /></a>
-                        <div x-show="showTooltip" x-transition
-                            class="absolute top-full mb-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 whitespace-nowrap z-50 shadow">
-                            RADIO MURA
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
 
 
 
@@ -667,8 +627,8 @@
                     target="_blank">SMARTTAX</a>
                 <a href="https://infopublik.id/mediacenter/2614" class="btn btn-primary" target="_blank">INFO
                     PUBLIK</a>
-                <a href="https://ppid.murungrayakab.go.id/" class="btn btn-primary" target="_blank">PPID</a>
-                <a href="http://jdih.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH</a>
+                
+                
                 <a href="http://jdih-dprd.murungrayakab.go.id/" class="btn btn-primary" target="_blank">JDIH
                     DPRD</a>
 
